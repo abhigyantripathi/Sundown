@@ -252,7 +252,77 @@ nav{
     }
 }
 #page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(219, 206, 206);
+    padding: 4vw 0;
+}
+.elem{
+    height: 150px;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid black ;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+}
+.elem h2{
+    font-size: 3vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    position: relative;
+    z-index: 9;
+
+}
+.elem .overlay{
     height: 100%;
     width: 100%;
+    background-color: rgb(221, 179, 101);
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.2s;
+
+
+}
+.elem:hover .overlay{
+    top: 0;;
+}
+
+#fixed-image {
+    height: 30vw;
+    width: 24vw;
+    /* background-color: red; */
+    border-radius: 15px;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 25%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+
+#page4{
+    height: 70vh;
+    width: 100%;
     background-color: #EFEAE3;
+
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 30%;
+    border-left: 1px solid #aeadad;
+    padding: 0 2vw;
+}
+
+#page5 {
+    height: 100vh;
+    width: 100%;
+    /* background-color: #EFEAE3; */
 }
